@@ -7,9 +7,6 @@ The Project was part of *Guide and Navigation System* master degree course at th
 The EFK was designed and tested using navigation toolbox in **Matlab** and **Simulink**.  
 The work include the simulation of the proposed filter with a real-dataset collected at the Universita´di Pisa during different fly experiments of a drone. 
 
-Below a
-
-
 The work is organized as follows:  
 
 &#x1F539; **EKF 1 dof**, **EKF 3 dof**: the extended Kalman filter is designed first on simplified 1 degree of freedom system and three degree of freedom system, where the dataset was created in the same simulation environment;
@@ -18,12 +15,11 @@ The work is organized as follows:
 
 &#x1F539; **EKF with feedback correction tested on real dataset**: the extended Kalman filter is tested on the real_dataset to evaluate the perfomance;
 
-  - from scratch CNN,
-  - pretrained CNN,
-  - two-channel CNN using baseline patches (to pair in the NN bening tissue with corrispondend malign one )
-
-
-For each test a simulink simulation was created and the results of proposed EKF was compared to a standard kalman filter without the bias estimation.
-
+For each test a simulink simulation was created and the results of proposed EKF was compared to a standard kalman filter without the bias estimation.  
 To have an explanation of the matlab files and how to run the simulink simulation please refere to the _contents.md_ file inside the folder. 
+
+PS: a schematich overview of the proposed filter with the estimated acceleremoter bias used as correction parameter integrated in the asset estimator. 
+
+<img src="https://github.com/rachele182/navigation_systems/assets/75611841/b8a41c51-eb79-4c9b-b673-6eede590bbc5" width="365">]
+
 
