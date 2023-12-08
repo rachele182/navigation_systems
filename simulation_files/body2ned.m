@@ -4,7 +4,7 @@
 %    email                : rachelenebbia <at> gmail <dot> com
 
 %%Description: Function to calculate the tranformation matrix to rotate from body frame to NED frame
-%Inputs: phi, teta, pis [rad] --> body asset euler angles
+%Inputs: phi, theta, psi [rad] --> body asset euler angles
 %Outpit: C_bn = 3x3 matrix 
 
 function C_bn = body2ned(phi,theta,psi)
