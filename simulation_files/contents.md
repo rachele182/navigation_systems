@@ -14,5 +14,5 @@ Here afther a brief description of the contents of the folder.
     3. run first matlab script init_3_gdl_AHRS_fb.m --> open KF_3_gdl_AHRS_Datase1.slx, KF_3_gdl_AHRS_Dataset2.slx --> start simulink simulation. 
     4. run first matlab script --> open init_dati_veri.nm --> KF_AHRS_Dati_Veri.slx --> start simulink simulation.
 
-Please note that all the files are written in Matlab and simulink.  
+Please note that all the files are written in Matlab and simulink. To run the simulations a Simulink version **>=R2020b** is needed.  
 The Kalman filter as well all the other functions are written as *MatlabFunctions* inside the simulink blocks.
