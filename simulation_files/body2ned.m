@@ -1,10 +1,10 @@
 % Master Degree in Robotics and Automation Engineering, Dipartimento di Ingegneria, Universita´ di Pisa
 % Authors: Rachele Nebbia Colomba, Chiara Sammarco
-%    copyright            : (C) 2022 Technical University of Munich // Universitä di pisa    
+%    copyright            : (C) 2021 Dipartimento di Ingegneria dell´Informazione (DII) // Universita´ di Pisa    
 %    email                : rachelenebbia <at> gmail <dot> com
 
 %%Description: Function to calculate the tranformation matrix to rotate from body frame to NED frame
-%Inputs: phi, teta, pis [rad] --> body asset euler angles
+%Inputs: phi, theta, psi [rad] --> body asset euler angles
 %Outpit: C_bn = 3x3 matrix 
 
 function C_bn = body2ned(phi,theta,psi)

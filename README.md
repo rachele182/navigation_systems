@@ -18,7 +18,7 @@ The work is organized as follows:
 For each test a simulink simulation was created and the results of proposed EKF was compared to a standard kalman filter without the bias estimation.  
 To have an explanation of the matlab files and how to run the simulink simulation please refere to the _contents.md_ file inside the folder. 
 
-PS: a schematich overview of the proposed filter with the estimated acceleremoter bias used as correction parameter integrated in the asset estimator. 
+PS: Below you can find a schematich overview of the proposed filter with the estimated acceleremoter bias used as correction parameter integrated in the asset estimator. 
 
 <img src="https://github.com/rachele182/navigation_systems/assets/75611841/b8a41c51-eb79-4c9b-b673-6eede590bbc5" width="365">]
 
