@@ -1,7 +1,6 @@
-### <font color="green"> <span style="font-size:larger;"> Contents of Four_Classes_Classification: </font> </span>
+### <font color="green"> <span style="font-size:larger;"> Contents of simulation files : </font> </span>
 
 Here afther a brief description of the contents of the folder.   
-
 
 - **Simulation Files**:
     - KF_1gdl.slx and KF_3gdl.slx contains the preliminar tests on the simulated   dataset designed for simplified 1 degree and 3 degree of freedom respectively;
