@@ -20,6 +20,6 @@ To have an explanation of the matlab files and how to run the simulink simulatio
 
 PS: Below you can find a schematich overview of the proposed filter with the estimated acceleremoter bias used as correction parameter integrated in the asset estimator. 
 
-<img src="https://github.com/rachele182/navigation_systems/assets/75611841/b8a41c51-eb79-4c9b-b673-6eede590bbc5" width="365">]
+<img src="https://github.com/rachele182/navigation_systems/assets/75611841/b8a41c51-eb79-4c9b-b673-6eede590bbc5" width="365">
 
 
