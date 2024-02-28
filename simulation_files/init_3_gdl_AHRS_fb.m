@@ -1,8 +1,8 @@
 % Navigation and Guide Systems Projet
 % Master Degree in Robotics and Automation Engineering, Dipartimento di Ingegneria, Universita´ di Pisa
 % Authors: Rachele Nebbia Colomba, Chiara Sammarco
-%    copyright            : (C) 2021 Dipartimento di Ingegneria dell´Informazione (DII) // Universita´ di Pisa    
-%    email                : rachelenebbia <at> gmail <dot> com
+% copyright            : (C) 2021 Dipartimento di Ingegneria dell´Informazione (DII) // Universita´ di Pisa    
+% email                : rachelenebbia <at> gmail <dot> com
 
 %/ ---------------------------- EKF 3 DOF for bias estimation with feddback correction ------------------ //
 

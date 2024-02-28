@@ -11,6 +11,7 @@ Here afther a brief description of the contents of the folder.
     - init_*.m files contain the parameters and values to seupt the workspace needed for the simulation; 
     - body2ned.m contains the function to compute the rotation matrix from body frame to navigation frame (NED);
     - LOG0079_parsed_seg2.mat contains all the data and sensors measurements collectd during a fly experiment of the drone system in february 2020.
+    - plot_data.mat : script created to collect and visualize all the data coming from the sensors mounted on the drone. 
 
 - **How to run**:
     1. run first matlab script init_1gdl.m --> open KF_1_gdl.slx --> start simulink simulation;
@@ -19,4 +20,6 @@ Here afther a brief description of the contents of the folder.
     4. run first matlab script --> open init_dati_veri.nm --> KF_AHRS_Dati_Veri.slx --> start simulink simulation.
 
 Please note that all the files are written in Matlab and simulink. To run the simulations a Simulink version **>=R2020b** is needed.  
+
+**Note:**
 The Kalman filter as well all the other functions are written as *MatlabFunctions* inside the simulink blocks.
