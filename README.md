@@ -1,25 +1,84 @@
-### <font color="green"> <span style="font-size:larger;"> Navigation Systems Project </font> </span>
-<font color="green">**Authors**:</font>  Rachele Nebbia Colomba, Chiara Sammarco  
-<font color="green">**Title**: Extended Kalaman Filter for Accelerometer bias estimation </font> 
+<div align="center">
 
-This repositoty contains the code and results of simulation of an Extended Kalman Filter designed for a drone system to estimate the accelerometer bias (added here as a state of the system).  
-The Project was part of *Guide and Navigation System* master degree course at the Department of Robotics and Automation Engineering, Universita´di Pisa.  
-The EFK was designed and tested using navigation toolbox in **Matlab** and **Simulink**.  
-The work include the simulation of the proposed filter with a real-dataset collected at the Universita´di Pisa during different fly experiments of a drone. 
+# Underwater Systems — AUV Simulation, Control & Navigation 🌊
 
-The work is organized as follows:  
+**Complete modeling, control and Kalman-filter navigation of an Autonomous Underwater Vehicle (AUV) performing a lawn-mower survey in an unknown area**
 
-&#x1F539; **EKF 1 dof**, **EKF 3 dof**: the extended Kalman filter is designed first on simplified 1 degree of freedom system and three degree of freedom system, where the dataset was created in the same simulation environment;
+**Authors:** Rachele Nebbia Colomba · Chiara Sammarco · Francesco Vezzi · Matteo Paiano *
 
-&#x1F539; **EKF 3 dof with feedback correction**: the extended Kalman filter is tested and the estimated bias is given as a correction input to the asset computation (AHRS system);
+*Final project — MSc course "Underwater Systems" · Robotics and Automation Engineering, Università di Pisa*
 
-&#x1F539; **EKF with feedback correction tested on real dataset**: the extended Kalman filter is tested on the real_dataset to evaluate the perfomance;
+[![MATLAB](https://img.shields.io/badge/MATLAB-Simulink-orange)](https://www.mathworks.com/products/simulink.html)
+[![Kalman](https://img.shields.io/badge/State%20Estimation-Kalman%20Filter-blueviolet)](https://en.wikipedia.org/wiki/Kalman_filter)
+[![Robotics](https://img.shields.io/badge/Robotics-AUV%20Control-green)](https://en.wikipedia.org/wiki/Autonomous_underwater_vehicle)
 
-For each test a simulink simulation was created and the results of proposed EKF was compared to a standard kalman filter without the bias estimation.  
-To have an explanation of the matlab files and how to run the simulink simulation please refere to the _contents.md_ file inside the folder. 
+</div>
 
-PS: Below you can find a schematich overview of the proposed filter with the estimated acceleremoter bias used as correction parameter integrated in the asset estimator. 
+---
 
-<img src="https://github.com/rachele182/navigation_systems/assets/75611841/b8a41c51-eb79-4c9b-b673-6eede590bbc5" width="365">
+## Overview
+
+Final project for the **Underwater Systems** course (MSc Robotics and Automation Engineering, **Università di Pisa**).
+
+The work delivers the **complete model of an AUV** — environment, sensors, controller and navigation filter — required to autonomously run a **lawn-mower survey** over an **unknown** seabed. Everything is built and validated in **MATLAB / Simulink**.
+
+The integrated system is split into **five models**:
+
+🔸 **Trajectory Generator** — computes the survey trajectory over the unknown area;  
+🔸 **Vehicle Model** — AUV geometric parameters, dynamics and **thruster** positions;  
+🔸 **Control** — **PID controllers** for the AUV thrusters;  
+🔸 **Sensor + Environment** — full seabed model and the chosen sensor models;  
+🔸 **Navigation** — the **Kalman navigation filter**.
+
+<div align="center">
+<img src="https://github.com/rachele182/navigation_systems/assets/75611841/16b22289-f5a4-4cf3-a26e-ecd3426b7a5f" width="375">
+  <br/>
+  <em>The modeled AUV, "Pasqualo".</em>
+</div>
+
+## Repository Structure
+
+```
+.
+├── sensor_model/   # MATLAB/Simulink models of the underwater environment and sensors
+├── mission/        # Simulink model + MATLAB scripts to run the full mission
+├── animation/      # Script to animate the executed mission
+└── README.md
+```
+
+> ▶️ See **`mission/contents.md`** for a description of each file and instructions to run the simulation and the animation.
+
+## What's Inside
+
+This project shows a complete, end-to-end AUV pipeline rather than a single block:
+
+- **Trajectory planning** for area-coverage survey missions;
+- **Hydrodynamic vehicle modeling** incl. thruster configuration;
+- **PID-based thruster control**;
+- **Sensor + environment simulation** (seabed reconstruction);
+- **Kalman-filter state estimation / sensor fusion** for navigation.
+
+## About This Repo (info note)
+
+This project was built as **part of a team effort** with multiple students. For copyright reasons, the detailed scripts are disclosed in full only in **`sensor_model`** (the sensor/environment models developed by the authors marked with *). The `mission` and `animation` folders contain the **final integrated mission**, which is the result of merging all five modules.
+
+<div align="center">
+  <img src="https://github.com/rachele182/navigation_systems/assets/75611841/39082569-4841-47a7-8545-c70805ac7949" width="425">
+</div>
+
+## Key Skills & Tools
+
+| Area                | What it demonstrates                              |
+|---------------------|---------------------------------------------------|
+| State estimation    | Kalman filter, sensor fusion, navigation          |
+| Control             | PID thrust allocation, trajectory tracking        |
+| Modeling            | Hydrodynamics, thruster configuration, seabed env |
+| Simulation          | MATLAB / Simulink, full mission + animation       |
+| Robotics            | AUV/underwater robotics, autonomous navigation    |
+
+## About
+
+Complete **simulation, control and navigation-filter design** for an AUV performing a lawn-mower (**area-coverage**) survey in an **unknown** area — built in MATLAB/Simulink, with **Kalman-filter** state estimation.
+
 
 
